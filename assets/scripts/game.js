@@ -49,9 +49,9 @@ const game = {
 
     setEvents() {
         window.addEventListener("keydown", e => {
-            if (e.keyCode === KEYS.SPACE) {
+            if (e.keyCode === KeyboardKeys.space) {
                 this.platform.fire();
-            } else if (e.keyCode === KEYS.LEFT || e.keyCode === KEYS.RIGHT) {
+            } else if (e.keyCode === KeyboardKeys.left || e.keyCode === KeyboardKeys.right) {
                 this.platform.start(e.keyCode);
             }
         });
