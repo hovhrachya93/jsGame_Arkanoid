@@ -1,6 +1,6 @@
-const KeyboardKeys = {
-    left: 37,
-    right: 39,
+const KEYS = {
+    LEFT: 37,
+    RIGHT: 39,
     space: 32
 }
 
@@ -49,9 +49,9 @@ const game = {
 
     setEvents() {
         window.addEventListener("keydown", e => {
-            if (e.keyCode === KeyboardKeys.space) {
+            if (e.keyCode === KEYS.space) {
                 this.platform.fire();
-            } else if (e.keyCode === KeyboardKeys.left || e.keyCode === KeyboardKeys.right) {
+            } else if (e.keyCode === KEYS.LEFT || e.keyCode === KEYS.RIGHT) {
                 this.platform.start(e.keyCode);
             }
         });
